@@ -26,7 +26,6 @@ typedef pair<string, int> psi;
 typedef pair<int, string> pis;
 typedef vector<int> vi;
 typedef vector<double> vd;
-typedef vector<long double> vld;
 typedef vector<long> vl;
 typedef vector<long long> vll;
 typedef vector<string> vs;
@@ -56,9 +55,10 @@ constexpr int INF = 100000000;
 
 int main()
 {
-    ll a, b, c, d;
-    cin >> a >> b >> c >> d;
-    cout << ( ( a * b % d ) * c ) % d << endl;
+    int n, r;
+    cin >> n >> r;
+    P((int)(n+n*(double)r/100));
+
     return 0;
 }
 

@@ -26,7 +26,6 @@ typedef pair<string, int> psi;
 typedef pair<int, string> pis;
 typedef vector<int> vi;
 typedef vector<double> vd;
-typedef vector<long double> vld;
 typedef vector<long> vl;
 typedef vector<long long> vll;
 typedef vector<string> vs;
@@ -56,9 +55,14 @@ constexpr int INF = 100000000;
 
 int main()
 {
-    ll a, b, c, d;
-    cin >> a >> b >> c >> d;
-    cout << ( ( a * b % d ) * c ) % d << endl;
+    string s;
+    cin >> s;
+    rep(i,s.size()) {
+        if (islower(s[i])) s[i] = toupper(s[i]);
+        else s[i] = tolower(s[i]);
+    }
+    P(s);
+
     return 0;
 }
 
