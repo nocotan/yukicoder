@@ -5,12 +5,9 @@ using namespace std;
 #define int long long
 
 auto main() -> signed {
-    double a, b, c;
-    cin >> a >> b >> c;
-    double r = (b - c) / (a - b);
-    double d = b - r*a;
-    int ans = r*c+d;
-    cout << ans << endl;
+    int b1,b2,b3;
+    cin >> b1 >> b2 >> b3;
+    cout <<((b3-b1)*(b2-b3)+b2*(b1-b2))/(b1-b2)<<endl;
     return 0;
 }
 
